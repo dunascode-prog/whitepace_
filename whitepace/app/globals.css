@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@config "../tailwind.config.tsx";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
