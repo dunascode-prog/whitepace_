@@ -22,14 +22,14 @@ const config: Config = {
       },
 
       fontSize: {
-        h1: ["65px", { lineHeight: "82px", fontWeight: "700" }],
-        h2: ["57px", { lineHeight: "72px", fontWeight: "700" }],
-        h3: ["47px", { lineHeight: "60px" }],
-        h4: ["29px", { lineHeight: "37px" }],
-        h5: ["21px", { lineHeight: "31px" }],
+        h1: ["59px", { lineHeight: "82px", fontWeight: "700" }],
+        h2: ["51px", { lineHeight: "72px", fontWeight: "700" }],
+        h3: ["42px", { lineHeight: "60px", fontWeight: "600" }],
+        h4: ["23px", { lineHeight: "37px", fontWeight: "600" }],
+        h5: ["15px", { lineHeight: "31px" }],
 
         "p1-semibold": [
-          "17px",
+          "16px",
           {
             lineHeight: "34px",
             fontWeight: "600",
@@ -41,6 +41,13 @@ const config: Config = {
           {
             lineHeight: "29px",
             fontWeight: "400",
+          },
+        ],
+        "p1-bold": [
+          "17px",
+          {
+            lineHeight: "29px",
+            fontWeight: "700",
           },
         ],
 
