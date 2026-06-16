@@ -866,7 +866,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-primary_1 flex flex-col items-center gap-15 text-secondary_3 px-40 pt-30">
+      <div className="bg-primary_1 flex flex-col items-center gap-10 text-secondary_3 px-40 pt-30">
         <div className="flex flex-col items-center gap-5">
           <div className="text-h4">Try Whitepace today</div>
           <div className="text-p1-regular">
@@ -916,7 +916,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-between gap-30 py-10">
+        <div className="flex flex-row justify-between gap-32 py-10">
           <div className="flex flex-col items-left gap-2">
             <div className="min-w-36 min-h-1">
               <Image
@@ -964,6 +964,60 @@ export default function Home() {
                   className="max-w-5.75 max-h-4.5"
                 />
               </button>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-between gap-111 items-center">
+          <div className="flex flex-row items-center justify-between gap-5">
+            <div className="flex flex-row justify-between gap-1 items-center">
+              <img
+                src="./Group1.svg"
+                alt="logo"
+                className="max-w-5.75 max-h-4.5"
+              />
+
+              <div className="text-p2-regular">English</div>
+              <img
+                src="./Down Arrow.svg"
+                alt="logo"
+                className="max-w-5.75 max-h-4.5"
+              />
+            </div>
+            <div className="text-p2-regular">Terms & privacy</div>
+            <div className="text-p2-regular">Security</div>
+            <div className="text-p2-regular">Privacy</div>
+            <div className="text-p2-regular">©2021 Whitepace LLC.</div>
+          </div>
+          <div className="flex flex-row gap-3 items-center">
+            <div>
+              <Image
+                src="/facebook2.svg"
+                alt="Analytics dashboard"
+                width={55.47}
+                height={68}
+                priority
+                className="w-full max-w-4 h-auto"
+              />
+            </div>
+            <div className="">
+              <Image
+                src="/Twitter.svg"
+                alt="Analytics dashboard"
+                width={55.47}
+                height={68}
+                priority
+                className="w-full max-w-4 h-auto"
+              />
+            </div>
+            <div className="">
+              <Image
+                src="/Linkedin.svg"
+                alt="Analytics dashboard"
+                width={55.47}
+                height={68}
+                priority
+                className="w-full max-w-4 h-auto"
+              />
             </div>
           </div>
         </div>
