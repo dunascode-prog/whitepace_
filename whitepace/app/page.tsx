@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col justify-center">
-      <div className="section_1 z-500 fixed top-0 right-0 left-0 flex flex-row max-w-auto max-h-screen px-40 py-2 bg-primary_1 justify-between items-center">
+      <div className="section_1 z-500 fixed top-0 right-0 left-0 flex flex-row max-w-auto max-h-screen px-40 py-3 bg-primary_1 justify-between items-center">
         <img src="./logo.svg" alt="logo" className="max-w-45 max-h-6" />
         <div className="text-p2-medium text-secondary_3 flex flex-row gap-4.5 justify-between items-center">
           <div className="flex flex-row gap-2 justify-between items-center">
@@ -273,7 +273,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="section_6 px-40">
+      <div className="section_6 px-40 flex flex-col items-center">
         <div className="relative flex flex-col items-center">
           <div className="absolute z-50 -top-9 left-80 min-w-24 min-h-12">
             <Image
@@ -578,7 +578,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="section_8 relative overflow-hidden flex flex-row justify-between bg-primary_1 text-secondary_3 w-auto h-auto px-40 mt-20 py-30 ">
+      <div className="section_8 relative overflow-hidden bg-primary_1 text-secondary_3 w-auto h-auto px-40 mt-20 py-30 ">
         <div className="absolute z-20 top-10 left-0 min-w-20 min-h-10">
           <Image
             src="/BACKGROUND.png"
@@ -635,9 +635,9 @@ export default function Home() {
             </div>
             <div className="text-p2-regular">
               The app is open source and your notes are saved to an open format,
-              so you'll always have access to them. Uses End-To-End Encryption
-              (E2EE) to secure your notes and ensure no-one but yourself can
-              access them.
+              so you&apos;ll always have access to them. Uses End-To-End
+              Encryption (E2EE) to secure your notes and ensure no-one but
+              yourself can access them.
             </div>
             <div className="z-1000">
               <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
@@ -659,6 +659,312 @@ export default function Home() {
               priority
               className="w-full max-w-187 h-auto"
             />
+          </div>
+        </div>
+      </div>
+      <div className="relative section-10 flex flex-col gap-3.5 justify-between items-center px-40 py-30">
+        <div className="text-h2 z-10000">Our sponsors</div>
+        <div className="absolute z-100 top-20 left-130 min-w-20 min-h-10 ">
+          <Image
+            src="/Text-block.svg"
+            alt="Analytics dashboard"
+            width={624}
+            height={174}
+            priority
+            className="w-full max-w-187 h-auto"
+          />
+        </div>
+        <div className="sponsor-container flex flex-row gap-30 justify-between items-center">
+          <div className="">
+            <Image
+              src="/Apple.svg"
+              alt="Analytics dashboard"
+              width={55.47}
+              height={68}
+              priority
+              className="w-full max-w-8 h-auto"
+            />
+          </div>
+          <div className="">
+            <Image
+              src="/Microsoft.svg"
+              alt="Analytics dashboard"
+              width={287}
+              height={62}
+              priority
+              className="w-full max-w-37 h-auto"
+            />
+          </div>
+          <div className="">
+            <Image
+              src="/Slack.svg"
+              alt="Analytics dashboard"
+              width={280}
+              height={71}
+              priority
+              className="w-full max-w-37 h-auto"
+            />
+          </div>
+          <div className="">
+            <Image
+              src="/Google.svg"
+              alt="Analytics dashboard"
+              width={211}
+              height={69.81}
+              priority
+              className="w-full max-w-37 h-auto"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="section_11 bg-primary_1 text-secondary_3 ">
+        <div className="relative flex flex-row gap-15 justify-between w-auto h-auto px-40 py-10 ">
+          <div className="image min-w-110">
+            <Image
+              src="/Apps.svg"
+              alt="Analytics dashboard"
+              width={624}
+              height={376}
+              priority
+              className="w-full max-w-190 h-auto"
+            />
+          </div>
+          <div className="flex flex-col justify-center gap-3.5">
+            <div className="text-h2 z-100">
+              Work with Your Favorite Apps Using whitepace
+            </div>
+            <div className="text-p2-regular">
+              Whitepace teams up with your favorite software. Integrate with
+              over 1000+ apps with Zapier to have all the tools you need for
+              your project success.
+            </div>
+            <div className="">
+              <button className="text-p2-regular flex flex-row items-center gap-1.5  bg-primary_2 rounded py-2.5 px-4.5">
+                <div>Read More</div>
+                <img
+                  src="./icon.png"
+                  alt="logo"
+                  className="max-w-5.75 max-h-4.5"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section-12 flex flex-col justify-between gap-15 items-center px-40 py-15">
+        <div className="text-h2">What Our Clients Says</div>
+        <div className="card-container2 flex flex-row justify-between gap-5">
+          <div className="card1-1 shadow-custom-offset rounded-sm flex flex-col justify-between gap-8 px-10 py-15">
+            <div className="flex flex-col justify-between gap-6 border-b pb-5">
+              <div>
+                <Image
+                  src="/Quote.svg"
+                  alt="quote"
+                  width={86}
+                  height={61.46}
+                  className="w-full max-w-10 h-auto"
+                />
+              </div>
+
+              <div className="text-p2-medium">
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </div>
+            </div>
+            <div className="flex flex-row justify-beween gap-5">
+              <div>
+                <Image
+                  src="/Avater.svg"
+                  alt="quote"
+                  width={86}
+                  height={61.46}
+                  className="w-full max-w-12 h-auto"
+                />
+              </div>
+              <div>
+                <div className="text-p2-medium-e">Oberon Shaw, MCH</div>
+                <div className="text-p3-regular">
+                  Head of Talent Acquisition, North America
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card1-2 bg-primary_2 text-secondary_3 shadow-custom-offset rounded-sm flex flex-col justify-between gap-8 px-10 py-15">
+            <div className="flex flex-col justify-between gap-5 border-b pb-6">
+              <div>
+                <Image
+                  src="/Quote1.svg"
+                  alt="quote"
+                  width={86}
+                  height={61.46}
+                  className="w-full max-w-10 h-auto"
+                />
+              </div>
+
+              <div className="text-p2-medium">
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </div>
+            </div>
+            <div className="flex flex-row justify-beween gap-5">
+              <div>
+                <Image
+                  src="/Avater2.svg"
+                  alt="quote"
+                  width={86}
+                  height={61.46}
+                  className="w-full max-w-12 h-auto"
+                />
+              </div>
+              <div>
+                <div className="text-p2-medium-e text-primary_1">
+                  Oberon Shaw, MCH
+                </div>
+                <div className="text-p3-regular">
+                  Head of Talent Acquisition, North America
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card1-3 bg-primary_2 text-secondary_3  shadow-custom-offset rounded-sm flex flex-col justify-between gap-8 px-10 py-15">
+            <div className="flex flex-col justify-between gap-5 border-b pb-6">
+              <div>
+                <Image
+                  src="/Quote1.svg"
+                  alt="quote"
+                  width={86}
+                  height={61.46}
+                  className="w-full max-w-10 h-auto"
+                />
+              </div>
+
+              <div className="text-p2-medium">
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </div>
+            </div>
+            <div className="flex flex-row justify-beween gap-5">
+              <div>
+                <Image
+                  src="/Avater3.svg"
+                  alt="quote"
+                  width={86}
+                  height={61.46}
+                  className="w-full max-w-12 h-auto"
+                />
+              </div>
+              <div>
+                <div className="text-p2-medium-e text-primary_1">
+                  Oberon Shaw, MCH
+                </div>
+                <div className="text-p3-regular">
+                  Head of Talent Acquisition, North America
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-primary_1 flex flex-col items-center gap-15 text-secondary_3 px-40 pt-30">
+        <div className="flex flex-col items-center gap-5">
+          <div className="text-h4">Try Whitepace today</div>
+          <div className="text-p1-regular">
+            Get started for free. Add your whole team as your needs grow.
+          </div>
+          <div className="">
+            <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
+              <div>Try Taskey free</div>
+              <img
+                src="./icon.png"
+                alt="logo"
+                className="max-w-5.75 max-h-4.5"
+              />
+            </button>
+          </div>
+          <div className="text-p1-regular">On a big team? Contact sales</div>
+          <div className="flex flex-row gap-3 items-center">
+            <div>
+              <Image
+                src="/apple-black-logo 2.svg"
+                alt="Analytics dashboard"
+                width={55.47}
+                height={68}
+                priority
+                className="w-full max-w-8 h-auto"
+              />
+            </div>
+            <div className="">
+              <Image
+                src="/windows-logo 1.svg"
+                alt="Analytics dashboard"
+                width={55.47}
+                height={68}
+                priority
+                className="w-full max-w-8 h-auto"
+              />
+            </div>
+            <div className="">
+              <Image
+                src="/Group.svg"
+                alt="Analytics dashboard"
+                width={55.47}
+                height={68}
+                priority
+                className="w-full max-w-8 h-auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-between gap-30 py-10">
+          <div className="flex flex-col items-left gap-2">
+            <div className="min-w-36 min-h-1">
+              <Image
+                src="/logo.svg"
+                alt="logo"
+                width={45}
+                height={6}
+                className="w-full max-w-38 h-auto"
+              />
+            </div>
+            <div className="text-p2-regular">
+              whitepace was created for the new ways we live and work. We make a
+              better workspace around the world
+            </div>
+          </div>
+          <div className="flex flex-col items-left gap-1">
+            <div className="text-p2-bold">Products</div>
+            <div className="text-p2-medium">Overview</div>
+            <div className="text-p2-medium">Pricing</div>
+            <div className="text-p2-medium">Customer stories</div>
+          </div>
+          <div className="flex flex-col items-left gap-1">
+            <div className="text-p2-bold">Resources</div>
+            <div className="text-p2-medium">Blog</div>
+            <div className="text-p2-medium">Guides & tutorial</div>
+            <div className="text-p2-medium">Help center</div>
+          </div>
+          <div className="flex flex-col items-left gap-1">
+            <div className="text-p2-bold">About us</div>
+            <div className="text-p2-medium">Careers</div>
+            <div className="text-p2-medium">Media kit</div>
+            <div className="text-p2-medium">Customer stories</div>
+          </div>
+          <div className="flex flex-col items-left gap-3">
+            <div className="text-h5">Try Whitepace today</div>
+            <div className="text-p2-regular">
+              Get started for free. Add your whole team as your needs grow.
+            </div>
+            <div className="">
+              <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
+                <div className="text-p2-regular">Start today</div>
+                <img
+                  src="./icon.png"
+                  alt="logo"
+                  className="max-w-5.75 max-h-4.5"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
