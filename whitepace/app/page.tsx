@@ -1,4 +1,7 @@
+import Button from "@/components/Button";
 import Image from "next/image";
+import { pricingPlans } from "../data/pricingPlans";
+import PriceCard from "@/components/PriceCard";
 
 export default function Home() {
   return (
@@ -44,17 +47,17 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row gap-2.5 justify-between items-center">
-            <button className="bg-secondary_1 text-primary_1 px-8.5 py-2.5 rounded">
+            <Button btnClassName="bg-secondary_1 text-primary_1 px-8.5 py-2.5 rounded">
               Login
-            </button>
-            <button className="flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
-              <div>Try Whitepace Free</div>
-              <img
-                src="./icon.png"
-                alt="logo"
-                className="max-w-5.75 max-h-4.5"
-              />
-            </button>
+            </Button>
+            <Button
+              btnClassName="flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+              src="./icon.png"
+              alt="logo"
+              imgClassName="max-w-5.75 max-h-4.5"
+            >
+              Try Whitepace Free
+            </Button>
           </div>
         </div>
       </div>
@@ -72,16 +75,15 @@ export default function Home() {
               collaborate, plan, analyze and manage everyday tasks
             </div>
             <div>
-              <button className="flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
-                <div>Try Whitepace Free</div>
-
-                <img
-                  src="./icon.png"
-                  alt="logo"
-                  className="max-w-5.75 max-h-4.5"
-                />
-              </button>
-            </div>{" "}
+              <Button
+                btnClassName="flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+                src="./icon.png"
+                alt="logo"
+                imgClassName="max-w-5.75 max-h-4.5"
+              >
+                Try Whitepace Free
+              </Button>
+            </div>
           </div>
 
           <div className="flex align-center justify-center min-w-140 min-h-78">
@@ -126,14 +128,14 @@ export default function Home() {
               the mobile app and save them to a note
             </div>
             <div className="z-1000">
-              <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
-                <div>Get Started</div>
-                <img
-                  src="./icon.png"
-                  alt="logo"
-                  className="max-w-5.75 max-h-4.5"
-                />
-              </button>
+              <Button
+                btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+                src="./icon.png"
+                alt="logo"
+                imgClassName="max-w-5.75 max-h-4.5"
+              >
+                Get Started
+              </Button>
             </div>
           </div>
           <div className="min-w-150 min-h-88 image">
@@ -177,14 +179,14 @@ export default function Home() {
               and share the URL with others.
             </div>
             <div className="">
-              <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
-                <div>Try It Now</div>
-                <img
-                  src="./icon.png"
-                  alt="logo"
-                  className="max-w-5.75 max-h-4.5"
-                />
-              </button>
+              <Button
+                btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+                src="./icon.png"
+                alt="logo"
+                imgClassName="max-w-5.75 max-h-4.5"
+              >
+                Try It Now
+              </Button>
             </div>
           </div>
         </div>
@@ -208,14 +210,14 @@ export default function Home() {
               save web pages or take screenshots as notes.
             </div>
             <div className="">
-              <button className="text-p2-regular flex flex-row items-center gap-1.5  bg-primary_2 rounded py-2.5 px-4.5">
-                <div>Let&apos;s Go</div>
-                <img
-                  src="./icon.png"
-                  alt="logo"
-                  className="max-w-5.75 max-h-4.5"
-                />
-              </button>
+              <Button
+                btnClassName="text-p2-regular flex flex-row items-center gap-1.5  bg-primary_2 rounded py-2.5 px-4.5"
+                src="./icon.png"
+                alt="logo"
+                imgClassName="max-w-5.75 max-h-4.5"
+              >
+                Let&apos;s Go
+              </Button>
             </div>
           </div>
           <div className="min-w-150 min-h-88 image">
@@ -261,14 +263,14 @@ export default function Home() {
               plugins using the Extension API.
             </div>
             <div className="">
-              <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
-                <div>Let&apos;s Go</div>
-                <img
-                  src="./icon.png"
-                  alt="logo"
-                  className="max-w-5.75 max-h-4.5"
-                />
-              </button>
+              <Button
+                btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+                src="./icon.png"
+                alt="logo"
+                imgClassName="max-w-5.75 max-h-4.5"
+              >
+                Let&apos;s Go
+              </Button>
             </div>
           </div>
         </div>
@@ -294,8 +296,21 @@ export default function Home() {
         </div>
 
         <div className="card-container max-h-[80%] flex flex-row justify-center py-10 gap-3.5">
-          <div className="py-7">
-            <div className="card1 border border-secondary_1 rounded py-10 px-11 flex flex-col justify-center gap-1.5 ">
+          {pricingPlans.map((plan) => {
+            return (
+              <PriceCard
+                key={plan.id}
+                keyVal={plan.id}
+                title={plan.title}
+                price={plan.price}
+                description={plan.description}
+                features={plan.features}
+                btnTxt={plan.buttonText}
+              />
+            );
+          })}
+
+          {/* <div className="card1 border border-secondary_1 rounded py-10 px-11 flex flex-col justify-center gap-1.5 ">
               <div className="text-p1-bold">Free</div>
               <div className="text-h4">$0</div>
               <div className="text-p2-regular">
@@ -382,9 +397,9 @@ export default function Home() {
               </div>
 
               <div>
-                <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_4 rounded border-1 border-secondary_1 py-2 px-8 mt-1">
+                <Button btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_4 rounded border-1 border-secondary_1 py-2 px-8 mt-1">
                   Get Started
-                </button>
+                </Button>
               </div>
             </div>
           </div>
@@ -476,9 +491,10 @@ export default function Home() {
               </div>
 
               <div>
-                <button className="text-p2-regular bg-primary_2 flex flex-row items-center gap-1.5 text-secondary_3 rounded py-2 px-8 mt-1">
+                <Button btnClassName="text-p2-regular bg-primary_2 flex flex-row items-center gap-1.5 text-secondary_3 rounded py-2 px-8 mt-1">
+                  {" "}
                   Get Started
-                </button>
+                </Button>
               </div>
             </div>
           </div>
@@ -570,12 +586,11 @@ export default function Home() {
               </div>
 
               <div>
-                <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_4 rounded border-1 border-secondary_1 py-2 px-8 mt-1">
+                <Button btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_4 rounded border-1 border-secondary_1 py-2 px-8 mt-1">
                   Get Started
-                </button>
+                </Button>
               </div>
-            </div>
-          </div>
+            </div> */}
         </div>
       </div>
       <div className="section_8 relative overflow-hidden bg-primary_1 text-secondary_3 w-auto h-auto px-40 mt-20 py-30 ">
@@ -608,14 +623,22 @@ export default function Home() {
             and iOS. A terminal app is also available!
           </div>
           <div className="">
-            <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
+            {/* <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
               <div>Try Taskey</div>
               <img
                 src="./icon.png"
                 alt="logo"
                 className="max-w-5.75 max-h-4.5"
               />
-            </button>
+            </button> */}
+            <Button
+              btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+              src="./icon.png"
+              alt="logo"
+              imgClassName="max-w-5.75 max-h-4.5"
+            >
+              Try Taskey
+            </Button>
           </div>
         </div>
       </div>
@@ -640,14 +663,14 @@ export default function Home() {
               yourself can access them.
             </div>
             <div className="z-1000">
-              <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
-                <div>Get Started</div>
-                <img
-                  src="./icon.png"
-                  alt="logo"
-                  className="max-w-5.75 max-h-4.5"
-                />
-              </button>
+              <Button
+                btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+                src="./icon.png"
+                alt="logo"
+                imgClassName="max-w-5.75 max-h-4.5"
+              >
+                Get Started
+              </Button>
             </div>
           </div>
           <div className="min-w-140 min-h-78 image">
@@ -739,14 +762,14 @@ export default function Home() {
               your project success.
             </div>
             <div className="">
-              <button className="text-p2-regular flex flex-row items-center gap-1.5  bg-primary_2 rounded py-2.5 px-4.5">
-                <div>Read More</div>
-                <img
-                  src="./icon.png"
-                  alt="logo"
-                  className="max-w-5.75 max-h-4.5"
-                />
-              </button>
+              <Button
+                btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+                src="./icon.png"
+                alt="logo"
+                imgClassName="max-w-5.75 max-h-4.5"
+              >
+                Read More
+              </Button>
             </div>
           </div>
         </div>
@@ -866,21 +889,21 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-primary_1 flex flex-col items-center gap-10 text-secondary_3 px-40 pt-30">
+      <div className="bg-primary_1 flex flex-col gap-10 text-secondary_3 px-40 pt-30 pb-1">
         <div className="flex flex-col items-center gap-5">
           <div className="text-h4">Try Whitepace today</div>
           <div className="text-p1-regular">
             Get started for free. Add your whole team as your needs grow.
           </div>
           <div className="">
-            <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
-              <div>Try Taskey free</div>
-              <img
-                src="./icon.png"
-                alt="logo"
-                className="max-w-5.75 max-h-4.5"
-              />
-            </button>
+            <Button
+              btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+              src="./icon.png"
+              alt="logo"
+              imgClassName="max-w-5.75 max-h-4.5"
+            >
+              Try Taskey free
+            </Button>
           </div>
           <div className="text-p1-regular">On a big team? Contact sales</div>
           <div className="flex flex-row gap-3 items-center">
@@ -956,19 +979,19 @@ export default function Home() {
               Get started for free. Add your whole team as your needs grow.
             </div>
             <div className="">
-              <button className="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5">
-                <div className="text-p2-regular">Start today</div>
-                <img
-                  src="./icon.png"
-                  alt="logo"
-                  className="max-w-5.75 max-h-4.5"
-                />
-              </button>
+              <Button
+                btnClassName="text-p2-regular flex flex-row items-center gap-1.5 text-secondary_3 bg-primary_2 rounded py-2.5 px-4.5"
+                src="./icon.png"
+                alt="logo"
+                imgClassName="max-w-5.75 max-h-4.5"
+              >
+                Start today
+              </Button>
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-between gap-111 items-center">
-          <div className="flex flex-row items-center justify-between gap-5">
+        <div className="flex flex-row justify-between items-center">
+          <div className="flex flex-row items-center justify-between lg:gap-5 xl:gap-15">
             <div className="flex flex-row justify-between gap-1 items-center">
               <img
                 src="./Group1.svg"

@@ -1,5 +1,4 @@
 import "./globals.css";
-import "@fontsource/inter";
 export default function RootLayout({
   children,
 }: Readonly<{
